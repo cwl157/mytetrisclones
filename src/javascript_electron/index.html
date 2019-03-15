@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Tetris Clone</title>
+  </head>
+  <body>
+        <div id="play">
+			<canvas class="visible-md visible-lg" style="background:black; position:absolute; left: 0; top:0;" id="gameBoard" width="500" height="600"></canvas>
+		</div>
+	
+		<!-- The following section is to import javascript using traditional script tags like a website. Found this solution on stack overflow, seems to work well -->
+		<!-- Insert this line above script imports  -->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+		<!-- normal script imports etc  -->
+		<script src='./js/utilities.js'></script>
+		<script src='./js/button.js'></script>
+		<script src='./js/my-tetris-clone_script.js'></script>
+	
+		<!-- Insert this line after script imports -->
+		<script>if (window.module) module = window.module;</script>
+  </body>
+</html>
